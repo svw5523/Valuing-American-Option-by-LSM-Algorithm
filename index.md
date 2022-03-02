@@ -6,7 +6,7 @@ Valuing the derivatives with American option features has been a main concern in
 
 The paper, ["Valuing American Options by Simulation: A Simple Least-Squares Approach"](https://people.math.ethz.ch/~hjfurrer/teaching/LongstaffSchwartzAmericanOptionsLeastSquareMonteCarlo.pdf), has proposed a brand-new approach to estimate the option's conditional expectation using least squares regression method. We could then, compute the American option value by working in backwardation until reaching the initial exercise date.
 
-### Python code to reproduce the Least Square Monte Carlo approach (LSM) approach
+### Python code to reproduce the Least Square Monte Carlo (LSM) approach
 
 Inspired by the Longstaff-Schwartz(2001) Least Square Monte Carlo (LSM) approach, this python notebook builds a simple and generalized pricing framework for the American (put) option by working in backwardation. 
 
