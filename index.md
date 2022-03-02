@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+# Valuing American Option by LSM Algorithm
 
-You can use the [editor on GitHub](https://github.com/svw5523/Valuing-American-Option-by-LSM-Algorithm/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Introduction
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Valuing the derivatives with American option features has been a main concern in financial industry for a long time. The major issue is to determine when is the optimal time to exercise the option. To accomplish this task, at any time point within option's time to maturity, people need to compare the option immediate exercise value to the discounted conditional continued expectation value from last time point.
 
-### Markdown
+The paper, ["Valuing American Options by Simulation: A Simple Least-Squares Approach"](https://people.math.ethz.ch/~hjfurrer/teaching/LongstaffSchwartzAmericanOptionsLeastSquareMonteCarlo.pdf), has proposed a brand-new approach to estimate the option's conditional expectation using least squares regression method. We could then, compute the American option value by working in backwardation until reaching the initial exercise date.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Python code to reproduce the Least Square Monte Carlo approach (LSM) approach
 
-```markdown
-Syntax highlighted code block
+Inspired by the Longstaff-Schwartz(2001) Least Square Monte Carlo (LSM) approach, this python notebook builds a simple and generalized pricing framework for the American (put) option by working in backwardation. 
 
-# Header 1
-## Header 2
-### Header 3
+Simulate the underlying stock price paths by Geometric Brownian motion.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/svw5523/Valuing-American-Option-by-LSM-Algorithm/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+To test the accuracy of this reproduced LSM algorithm, I try to run the numerical example of American put option used in paper. This algorithm did give the same initial value approximately $0.1144 as the results stated in the paper.
