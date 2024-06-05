@@ -8,7 +8,7 @@ The paper, ["Valuing American Options by Simulation: A Simple Least-Squares Appr
 
 ### Python code to reproduce the Least Square Monte Carlo (LSM) approach
 
-Inspired by the Longstaff-Schwartz(2001) Least Square Monte Carlo (LSM) approach, this python notebook builds a simple and generalized pricing framework for the American (put) option by working in backwardation. 
+Inspired by the Longstaff-Schwartz(2001) Least Square Monte Carlo (LSM) approach, this python notebook builds a simple and generalized pricing framework for the American option by working in backwardation. 
 
 Simulate the underlying stock price paths by Geometric Brownian motion.
 
