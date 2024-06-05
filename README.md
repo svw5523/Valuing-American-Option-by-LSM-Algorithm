@@ -1,4 +1,4 @@
-# Valuing American Option by LSM Algorithm
+# Valuing American Option by LSM Approach
 
 ### Introduction
 
